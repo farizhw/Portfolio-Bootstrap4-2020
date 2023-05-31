@@ -1,0 +1,266 @@
+/*Universal*/
+html {
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*----------INDEX----------*/
+
+/*Navbar*/
+.navbar {
+    margin-top: -100px;
+}
+
+.navbar-brand {
+    color: #696868 !important;
+}
+
+.navbar-brand b {
+    color: #8a8a8a;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    color: #adadad !important;
+}
+
+.nav-link:hover {
+    color: #2e2d2d !important;
+}
+
+.nav-link:focus {
+    color: #2e2d2d !important;
+}
+
+/*Foto*/
+.img-circle {
+    border-radius: 150px;
+    margin-top: 40px;
+    width: 250px;
+}
+
+/*Tombol*/
+.tombol {
+    border-radius: 40px;
+    outline: none;
+    text-transform: uppercase;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Jumbotron*/
+.jumbotron {
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: right;
+    text-align: center;
+    height: 610px;
+}
+
+.jumbtron,
+.display-4 {
+    color: white;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbtron,
+.atas {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    word-spacing: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron img {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+/*Info*/
+.info {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    margin-top: -80px;
+    padding: 30px;
+
+}
+
+.info img {
+    height: 70px;
+    width: 70px;
+    margin-right: 25px;
+}
+
+.info h4 {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.info p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+/*Tentang*/
+.about {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.about h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+/*Garis*/
+hr {
+    width: 200px;
+    border-top: 2px solid #111;
+}
+
+/*Section*/
+section {
+    min-height: 610px;
+}
+
+/*Dokumentasi*/
+.dokumentasi {
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    width: auto;
+    padding-top: 10px;
+}
+
+.dokumentasi-box img {
+    opacity: 0.8;
+    transition: transform 0.8s, filter 1s ease-in-out;
+    filter: blur(2px);
+}
+
+.dokumentasi-box:hover img {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+
+}
+
+/*kontak*/
+.contact {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+
+.contact h2 {
+    font-size: 28;
+    font-weight: bold;
+}
+
+/*Footer*/
+.footer {
+    font-family: serif;
+    height: 80px;
+}
+
+.footer,
+.p {
+    padding-top: 30px;
+}
+
+/*----------AKHIR INDEX----------*/
+
+
+/*Desktop*/
+@media (min-width: 992px) {
+    body {
+        margin-top: 70px;
+    }
+
+    .navbar {
+        text-transform: uppercase;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-left: -15px;
+    }
+
+    .tombol {
+        margin-left: -15px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #8a8a8a;
+        width: 50%;
+        margin: auto;
+        border-radius: 10px;
+        padding-bottom: 3px;
+        margin-bottom: -6px;
+    }
+
+    .jumbotron {
+        height: 600px;
+        margin-top: -45px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 45px;
+        margin-top: 15px;
+    }
+
+    .jumbtron,
+    .atas {
+        font-size: 18px;
+    }
+
+    .img-circle {
+        margin-top: 55px;
+    }
+
+    .info {
+        padding: 30px;
+    }
+
+    .info h4 {
+        margin-top: 10px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 17px;
+    }
+
+    .portfolio h2 {
+        font-size: 32px;
+    }
+
+    .contact {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
